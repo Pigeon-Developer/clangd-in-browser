@@ -1,0 +1,9 @@
+{
+  "name": "@pigeon-oj/clangd-in-browser",
+  "version": "18.1.2-20241230.0640",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "wasm"
+  ]
+}
