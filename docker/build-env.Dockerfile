@@ -5,7 +5,7 @@ RUN apt update && apt install vim git build-essential cmake ninja-build python3 
 
 
 ENV WORKSPACE_DIR=/app
-RUN mkdir $WORKSPACE_DIR
+RUN mkdir -p $WORKSPACE_DIR/public/wasm/
 COPY build.sh /app/build.sh
 COPY wait_stdin.patch /app/wait_stdin.patch
 RUN cd $WORKSPACE_DIR && ./build.sh
